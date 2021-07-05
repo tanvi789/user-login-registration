@@ -33,14 +33,17 @@ app.use(express.static(path.join(__dirname,'../','static')));
 // });
 
 app.get('/', function(request, response) {
+    path.join(__dirname,'../','views');
     response.render('index.html');
 });
 
 app.get('/register', function(request, response) {
+    path.join(__dirname,'../','views');
     response.render('register.html');
 });
 
 app.get('/home', function(request, response) {
+    path.join(__dirname,'../','views');
     // Check if user is logged in
     if (request.session.loggedin) {
         // Render home page
@@ -63,7 +66,6 @@ app.get('/logout', function(request, response) {
 //
 // app.use(bodyParser.json());
 // app.use('/.netlify/functions/server', router);  // path must route to lambda
-// app.listen(3000);
 
 module.exports = app;
 module.exports.handler = serverless(app);
