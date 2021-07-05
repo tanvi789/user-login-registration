@@ -1,0 +1,6 @@
+[build]
+    publish = "views"
+    functions = "functions"
+
+[dev]
+    autoLaunch = false

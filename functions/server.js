@@ -33,7 +33,7 @@ app.use(express.static(path.join(__dirname,'../','static')));
 // });
 
 app.get('/', function(request, response) {
-    path.join(__dirname,'../','views');
+    //path.join(__dirname,'../','views');
     response.render('index.html');
 });
 
