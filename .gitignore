@@ -4,7 +4,8 @@
 /node_modules
 .env
 .idea
-.iml
+*.iml
+
 
 # testing
 /coverage
